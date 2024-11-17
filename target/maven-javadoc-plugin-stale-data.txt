@@ -1,0 +1,58 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'C:/Users/mzr_u/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar;C:/Users/mzr_u/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar;C:/Users/mzr_u/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+21
+-sourcepath
+'D:/Course/Code/OOP_NetBeans/lab2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/Course/Code/OOP_NetBeans/lab2/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'lab2 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'lab2 1.0-SNAPSHOT API'
+com.algonquincollege.lab2.DAO.impl
+com.algonquincollege.lab2.DAO
+com.algonquincollege.lab2.DB
+com.algonquincollege.lab2
+com.algonquincollege.lab2.Model
+C:\Users\mzr_u\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar = 1731358934619
+C:\Users\mzr_u\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar = 1731625694646
+C:\Users\mzr_u\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar = 1731625694783
+D:\Course\Code\OOP_NetBeans\lab2\src\main\java = 1730999019457
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\allclasses-index.html = 1731878150248
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\allpackages-index.html = 1731878150261
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\copy.svg = 1731878150295
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\element-list = 1731878150062
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\help-doc.html = 1731878150290
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\index-all.html = 1731878150280
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\index.html = 1731878150226
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\link.svg = 1731878150297
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\member-search-index.js = 1731878150266
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\module-search-index.js = 1731878150263
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\overview-summary.html = 1731878150286
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\overview-tree.html = 1731878150219
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\package-search-index.js = 1731878150264
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\script.js = 1731878150294
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\search-page.js = 1731878150305
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\search.html = 1731878150283
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\search.js = 1731878150301
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\serialized-form.html = 1731878150151
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\stylesheet.css = 1731878150292
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\tag-search-index.js = 1731878150267
+D:\Course\Code\OOP_NetBeans\lab2\target\reports\apidocs\type-search-index.js = 1731878150265

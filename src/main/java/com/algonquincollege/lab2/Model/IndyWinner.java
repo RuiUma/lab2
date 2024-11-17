@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.algonquincollege.lab2.Model;
 
 /**
- *
- * @author mzr_u
+ * Model class representing an Indy 500 winner.
  */
 public class IndyWinner {
     private int year;

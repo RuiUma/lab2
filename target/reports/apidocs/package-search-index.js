@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.algonquincollege.lab2"},{"l":"com.algonquincollege.lab2.DAO"},{"l":"com.algonquincollege.lab2.DAO.impl"},{"l":"com.algonquincollege.lab2.DB"},{"l":"com.algonquincollege.lab2.Model"}];updateSearchResults();

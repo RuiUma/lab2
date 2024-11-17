@@ -1,9 +1,5 @@
 package com.algonquincollege.lab2;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
 
 import com.algonquincollege.lab2.DAO.IndyWinnerDAO;
 import com.algonquincollege.lab2.DAO.impl.IndyWinnerDAOImpl;
@@ -15,28 +11,35 @@ import javax.servlet.http.*;
 //import java.sql.*;
 import javax.servlet.annotation.WebServlet;
 
+
 /**
  * <p>
- * This is a simple servlet that will use JDBC to gather all of the Indy 500
- * winner information from a database and format it into an HTML table.
- * No guarantees of meeting:
- *			Thread safety
- *			Does not adhere to "SOLID:
- *			No DAO pattern etc.
- *			No page scolling
- * This is "quick and dirty" simple DB table query, formats DB resultset to
- * an HTML table format
+ * A simple servlet that retrieves Indy 500 winner information from a database 
+ * and formats it into an HTML table.
+ * </p>
  */
 @WebServlet(urlPatterns = {"/IndyWinnerSimpleSV"})
 public class IndyWinnerSimpleSV extends HttpServlet {
 
     private IndyWinnerDAO dao;
 
+    /**
+     * Initializes the servlet and sets up the DAO for database access.
+     */
     @Override
     public void init() {
         dao = new IndyWinnerDAOImpl();
     }
+    
 
+    /**
+     * Handles HTTP GET requests to retrieve and display Indy 500 winners.
+     *
+     * @param request  the HttpServletRequest object that contains the request the client made to the servlet
+     * @param response the HttpServletResponse object that contains the response the servlet returns to the client
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException      if an I/O error occurs
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -67,11 +70,22 @@ public class IndyWinnerSimpleSV extends HttpServlet {
         response.getWriter().write(buffer.toString());
     }
 
+    /**
+     * Formats the page header for the HTML output.
+     *
+     * @param buffer the StringBuilder to append the header content to
+     */
     private void formatPageHeader(StringBuilder buffer) {
         buffer.append("<html><head><title>Indy 500 Winners</title></head>");
         buffer.append("<h2><center>Indianapolis 500 Winners</center></h2><br>");
     }
 
+    /**
+     * Formats the winners table in HTML.
+     *
+     * @param buffer  the StringBuilder to append the table content to
+     * @param winners the list of IndyWinner objects to display
+     */
     private void formatWinnersTable(StringBuilder buffer, List<IndyWinner> winners) {
         buffer.append("<center><table border>");
         buffer.append("<tr><th>Year</th><th>Driver</th><th>Average Speed</th><th>Country</th></tr>");

@@ -1,17 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.algonquincollege.lab2.DB;
 
-/**
- *
- * @author mzr_u
- */
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * Singleton class for managing database connections.
+ */
 public class DatabaseConnection {
     private static final String DB_URL = "jdbc:mysql://localhost:3306/IndyWinners?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String USER = "root";
@@ -19,9 +16,17 @@ public class DatabaseConnection {
 
     private static Connection connection = null;
 
+    /**
+     * Private constructor to prevent instantiation.
+     */
     private DatabaseConnection() { }
 
 
+    /**
+     * Retrieves the singleton instance of the database connection.
+     *
+     * @return a Connection object
+     */
     public static Connection getInstance() {
         if (connection == null) {
             synchronized (DatabaseConnection.class) {
@@ -44,6 +49,10 @@ public class DatabaseConnection {
     }
 
 
+    
+    /**
+     * Closes the database connection.
+     */
     public static void closeConnection() {
         if (connection != null) {
             try {
