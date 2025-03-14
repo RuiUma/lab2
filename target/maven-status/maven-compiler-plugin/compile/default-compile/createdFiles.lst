@@ -1,5 +1,4 @@
 com\algonquincollege\lab2\DAO\impl\IndyWinnerDAOImpl.class
-com\algonquincollege\lab2\Lab2.class
 com\algonquincollege\lab2\DB\DatabaseConnection.class
 com\algonquincollege\lab2\DAO\IndyWinnerDAO.class
 com\algonquincollege\lab2\Model\IndyWinner.class
